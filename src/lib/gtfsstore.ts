@@ -36,8 +36,8 @@ export function handleFeed(rawFeed: RawFeed) {
 			shapes.set(shape.shape_id, shape);
 		}
 		const point: ShapeCoord = {
-			shape_pt_lat: parseInt(line["shape_pt_lat"]),
-			shape_pt_lon: parseInt(line["shape_pt_lin"]),
+			shape_pt_lat: parseFloat(line["shape_pt_lat"]),
+			shape_pt_lon: parseFloat(line["shape_pt_lon"]),
 			shape_pt_sequence: parseInt(line["shape_pt_sequence"])
 		}
 		shapes.get(shape_id)?.shape_pt.push(point);
