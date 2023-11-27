@@ -1,5 +1,5 @@
 {
-	"name": "sveltekit-gtfs-path-viewer",
+	"name": "gtfs-shape-viewer",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
