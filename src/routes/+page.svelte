@@ -4,6 +4,9 @@
 	import {goto} from "$app/navigation";
 	
 	const zip = new JSZip();
+
+	// Reset the gtfs on first loading the page just in case the data persists
+	$gtfs = {shapes: new Map(), trips: new Map()};
 	
 	let fileList: FileList;
 	
